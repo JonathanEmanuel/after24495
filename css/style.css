@@ -30,6 +30,7 @@ body {
 .link__item {
     text-decoration: none;
     color: #4a4a6a;
+    transition: all 1s ease-in-out;
 }
 
 nav ul li{
@@ -41,7 +42,7 @@ nav ul li{
 }
 .link__item:hover{
     color: #271fe0;
-    font-weight: 900;
+    border-bottom: 1px solid #271fe0;
 }
 
 /* MAIN */
@@ -88,4 +89,22 @@ nav ul li{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+.fadeIn {
+    animation-name: fadeIn-animation;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+}
+
+
+/* Animation */
+@keyframes fadeIn-animation {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
