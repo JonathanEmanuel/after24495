@@ -30,6 +30,7 @@ body {
 .link__item {
     text-decoration: none;
     color: #4a4a6a;
+    transition: all 1s ease-in-out;
 }
 
 nav ul li{
@@ -41,7 +42,7 @@ nav ul li{
 }
 .link__item:hover{
     color: #271fe0;
-    font-weight: 900;
+    border-bottom: 1px solid #271fe0;
 }
 
 /* MAIN */
@@ -111,6 +112,7 @@ nav ul li{
     justify-content: center;
 }
 
+
 .social__link {
     color: #F2F2F2;
     text-decoration: none;
@@ -118,4 +120,57 @@ nav ul li{
 
 .social__link:hover {
     color: #F2AEAE;
+}
+
+.fadeIn {
+    animation-name: fadeIn-animation;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+}
+
+.fadeLeft {
+    animation-name: fadeLeft-animation;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.fadeRight {
+    animation-name: fadeRight-animation;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+
+
+/* Animation */
+@keyframes fadeIn-animation {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeLeft-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeRight-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
