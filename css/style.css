@@ -70,6 +70,27 @@ nav ul li{
 }
 
 
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section div {
+    width: 50%;
+}
+
+.section div img {
+    width: 100%;
+}
+
+.bg-blue {
+    background-color: #635FD9;
+}
+
 /* FOOTER */
 .footer {
     height: 15vh;
