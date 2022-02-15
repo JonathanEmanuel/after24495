@@ -89,3 +89,12 @@ nav ul li{
     flex-direction: column;
     justify-content: center;
 }
+
+.social__link {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.social__link:hover {
+    color: #635EF2;
+}
