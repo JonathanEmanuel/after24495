@@ -98,6 +98,19 @@ nav ul li{
     animation-iteration-count: initial;
 }
 
+.fadeLeft {
+    animation-name: fadeLeft-animation;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.fadeRight {
+    animation-name: fadeRight-animation;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+
 
 /* Animation */
 @keyframes fadeIn-animation {
@@ -106,5 +119,28 @@ nav ul li{
     }
     100%{
         opacity: 1;
+    }
+}
+
+@keyframes fadeLeft-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeRight-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
